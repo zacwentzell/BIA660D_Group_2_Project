@@ -19,3 +19,4 @@ Regression analysis for the extracted data from text mining
 Social network analysis for the network of the products in one category.
 
 We are done
+the end
