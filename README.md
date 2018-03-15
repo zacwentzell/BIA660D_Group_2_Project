@@ -18,3 +18,4 @@ Text mining of the reviews (Natural Language processing using spaCy, NLTK)
 Regression analysis for the extracted data from text mining
 Social network analysis for the network of the products in one category.
 
+We are done
