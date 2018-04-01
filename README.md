@@ -5,6 +5,7 @@ The class project for Group 2 of BIA 660D, Spring 2018.
 Update: March 31st
 We have written a code which scrape all the data for the intended product. Since we plan to analyze reviews about headphones, each member of group need to collect data for 5~10 headphones. Then, we combine the collected data to use as a data source for text mining.
 
+
 Proposal: under revision
 
 Aim of the project:
