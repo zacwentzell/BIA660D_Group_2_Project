@@ -120,3 +120,14 @@ title_list
 
 
 review_list
+
+
+# In[20]:
+
+import pandas as pd
+headphone_data = pd.DataFrame({'Title':title_list,'Reviews':review_list,'Score':score_list})
+headphone_data[:10]
+
+# In[21]:
+
+headphone_data.to_csv('D:/headphone_data.csv',columns=['Score','Title','Reviews'],index=False,sep=',')
