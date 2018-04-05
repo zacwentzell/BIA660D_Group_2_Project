@@ -1,0 +1,4 @@
+1- Replace "COMMAND" with "CONTROL" in case you run the code on Windows.
+2- Using Ipython version you can facilitate the search using interactive wizard to choose selected items (brands).
+3- Using Python version, you can add the name of the brand in the code.
+4- The code resume the process after several runs and gradually complete the list of reviews.

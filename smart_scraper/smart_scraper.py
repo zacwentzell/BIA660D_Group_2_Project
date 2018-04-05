@@ -90,7 +90,7 @@ Brands = left_nav_container_words[first_index+1:last_index]
 
 # In[262]:
 
-intended_checkboxes = ['Sony']
+intended_checkboxes = ['Sony', 'Wireless']
 print(intended_checkboxes)
 
 
