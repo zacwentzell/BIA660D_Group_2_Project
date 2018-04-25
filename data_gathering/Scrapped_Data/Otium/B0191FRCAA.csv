@@ -1,0 +1,172 @@
+,Product,Ratings,Reviews
+0,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Benson here again, continuing my reviews of USB Type-C legacy cables, adapters, and accessories. Today I am reviewing Otium's USB Type C to Micro USB Adapter, Otium USB Type C to Micro USB Adapter. This adapter is a MicroUSB female to Type-C plug adapter, putting it in the class of devices known as ""Legacy Host Adapters."" This product comes in a convenient 2 pack.
+
+Let's check spec compliance :
+I'm using my trusty Chromebook Pixel 2015 with the Chromium Twinkie USB-PD Sniffer, available on Amazon from Plugable : Plugable USB 3.1 Type-C (USB-C) Power Delivery Sniffer
+
+For my first test, I've got the Otium MicroUSB Adapter plugged into a good quality (itself capable of >2.4A) Micro-B cable from Belkin. (this one: Belkin 6-Foot 2.0 USB Type C (USB-C) to Micro USB Charge Cable, USB-C Certified) That is then plugged Apple proprietary (MacBook) charger capable of 5.2V at 2.4A.
+
+The Type-C end is plugged into Twinkie, acting as a pass through to Chromebook Pixel 2015. Picture attached!
+
+First let's run the ectool command from Pixel's command line to check what Pixel thinks is happening on its USB-C ports :
+localhost ~ # ectool --dev 1 usbpdpower
+Port 0: SNK Charger Proprietary 4612mV / 2400mA, max 5000mV / 2400mA / 12000mW
+Port 1: SRC
+
+So far so good. Pixel identifies the charger as a Proprietary type adapter, and has negotiated 2.4A.
+
+Let's see what Twinkie (the USB PD sniffer) says :
+> tw cc
+CC1 = 18 mV ; CC2 = 421 mV
+
+The tw cc command reads the current voltage values from the CC pins. As you can see here, CC2 pin has a value of 421mV. Referring to the USB Type-C Specification Table 4-25 Voltage on Sink CC pins, this voltage falls right in the middle of the range allowed for vRd-USB, meaning that yes, this MicroUSB adapter has the correct 56k' pullup resistor!
+
+One more Twinkie command :
+> tw vbus
+VBUS = 4750 mV ; -2440 mA
+
+The tw vbus command uses twinkie's current and voltage meter ability. As you can see, the laptop is pulling just around 2.4A of current at 4.750V from the Apple charger over the Belkin cable + Otium adapter.
+
+For a HighSpeed USB 2.0 data test, I’ve hooked my Nexus 5X to my Chromebook Pixel via the Otium MicroUSB adapter + Belkin cable to test large file transfer via MTP. It just works, no problem!
+
+Now for more subjective judgments of this adapter : The Type-C plug on this adapter is a stamped metal part that's been wrapped around to the shape of the plug. It does have a seam on one side. This is good, but not great like the stronger deep-draw plugs from other manufacturers including the Google and Apple 1st party plugs. What definitely makes the Otium adapter stand apart from other adapters like it though is the shell, which is anodized aluminum and a step above the plastic shells of similar adapters. It feels durable and fits in with the all aluminum bodies of Pixel devices, Nexus 6P, and MacBooks.
+
+In conclusion : A high quality charging and data sync MicroUSB Adapter from Otium! The adapter is a great safe way to breathe new life into your old A-to-MicroUSB cables for use with newer USB Type-C devices such as Nexus 6P/5X or Pixel devices. It is also future proof for fast charging USB Type-C devices to come!"
+1,Otium Wireless Bluetooth Headphones,1.0 out of 5 stars,"These are a nice temporary way to get around getting a new phone that adopted yet another ""universal standard"" which means all your old chargers and accessories are garbage. I buy Android phones to get away from the Apple experience of proprietary connectors release every other generation, but now I get the full Apple experience with a different user interface.
+
+EDIT: this review was written for a different product than it now shows. I bought an adapter piece for USB cable types, not these headphones. My star review has changed because of this which seems like a dirty sneaky practice."
+2,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"These adapters work great for converting all the existing micro USB cables into USB-C for the new devices in our house. We recently upgraded to the LG G5 and the Nexus 5X. However we also still have a number of other items (Amazon Kindle, Kindle Fire HDX, Kindle Fire 7, etc.) that need to be charged via micro USB. This is a great solution. The only problem I see is these are so small they can be lost when removed from the micro USB cable. Perhaps a small zip tie or lanyard that can be secured to the cable so you know they're always on the cable?"
+3,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"These set of three Micro USB-C type Charging Adapters were purchased to cap off some or my regular USB chargers in order to connect to my Galaxy Note 7. They fit well and are quality made. However, be aware that they do not provide data transfer, just charging of your phone.
+I have no problem with these adapters, and do recommend them. The price is reasonable."
+4,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Ordered this because of the positive review by Benson Leung.
+
+When the product arrived, one of the two adapters didn't work (wasn't charging my wife's Nexus 5x). I sent a message to OtiumDirect, and they sent me a replacement free of charge. The replacement works great.
+
+Overall, a really nice product, especially for the price, and very good, responsive customer service. I highly recommend this product."
+5,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Recently changed my phone and was thinking about buying a USB-A and USB-C cable but since I had tons of micro USB cables, I figured buying this adaptor will save me some money.
+So I bought this based on the famous Google engineer's review. There are so many similar products and that was the only way to find the proper one. The product itself is actually good quality but be careful as it comes in a small package and I almost threw it away with a garbage.
+Anyway, I am overall satisfied with this adapter. I recommend this product."
+6,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"I bought a different set of adapters previously and only got 90ma from a 1ft micro USB cable plugged into a 1.5A USB socket, switched to these and get 1.3A with my Nexus 5X phone which is on par with the Nexus 5. So this is a must get if you are using USB Type C with Micro USB cables."
+7,Otium Wireless Bluetooth Headphones,1.0 out of 5 stars,"I purchased ""USB Type C to Micro USB Adapter (2 Pack) Otium® USB-C to Micro USB Female Convert Connector for New Mackbook 12"", Google Chromebook Pixel, Nexus 5X /"" and the link brings me to this page.
+
+The adapters never worked. I bought more USB C cables and gave the old cables away instead."
+8,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Great way to use old Micro USB cables. It could be my imagination that they don't charge as fast as true USB C cables or it could be a safety thing since Micro USB cables might not be up to the task. Either way they work.
+9,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,These work great if you have any new samsung. adapts to fit old plug. I dont think it charges quite as fast as with the original charge but work great if you need a charge and dont have the original cord
+0,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"One of the few that really work with any cable. It will not allow a ""turbo charge"" from my micro usb cable charger, but it will allow transfers. It is a very sturdy connector!"
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Great for charging my OnePlus 2. Haven't tested if it does data or not, but I only bought them to use on some existing cables for charging purposes & in my car in case someone without USB-C needs a cord. Works wonderfully."
+2,Otium Wireless Bluetooth Headphones,1.0 out of 5 stars,"Order as USB-C OTG adapters. Works ok for charge, data does not work. Now item number shows headphones."
+3,Otium Wireless Bluetooth Headphones,1.0 out of 5 stars,"For what ever reason, neither of the 2 type C cables I have would fit these Adapters made of hard plastic."
+4,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Well built adapters that feel sturdy when plugged in on both ends (usb-c to micro-usb). Haven't tested specifically, but data transfers speeds will suffer from this, but at this price point, they are well worth the buy. As with most new standards, once the market catches up, usb-c cables will be much more available for everyone."
+5,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Good size (a hair over 1in long, fairly transparent during actual usage), and saved all my micro usb cables from being useless.
+2 adapters in 1 pack (1 in the car and 1 on my desk)
+Will probably buy more for other places."
+6,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"USB Spec Compliant (Has Proper Resister - Checked via Current Monitor)
+Solid Build Quality
+Charges Phone Rapidly 1.5A+
+Metal Casing
+Good Connections at Phone and Micro USB
+
+I purchased these for $5.99 at the time because of a coupon promotion. Great deal."
+7,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Worked great, i use it on all my micro usb wires. Bought a 2nd pack too. Highly recommend if you need to buy usb-c."
+8,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Awesome product !!! Works well !!! And, they are comfortable !!!"
+9,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"These are very very good. Firm fit on any USB micro cable, even old worn ones that wobbled in my older phone, and fit snuggly in my new USB-C phone. Overall, my old cables are nicer to use with adapter than they used to be when used alone. I bought a set of two a few months ago and am now buying another set to allow me to reuse more of my old cables."
+0,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Super awesome and has saved my bacon more than once.
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Never purchased this item !!!!!
+2,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,They work well
+3,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"These are great. Bought one set initially, but I have so many micro USB cables. Just bought another pack. And they come Benson Leung approved.."
+4,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Doubles the uses of chargers and cords.
+5,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,These are great little adapters that save me from rebuying all my cables.
+6,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,Do what they are supposed to do.
+7,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Great solution, better than buying new cables"
+8,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,This is the answer to not having to buy all new charging cords after switching to a new phone!!
+9,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,cool
+0,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Super sturdy and well made. The finish is great and the connection is very solid and secure.
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Works as advertised.
+2,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Works good, bought it because of the tech review assuring that it had the proper resistor."
+3,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,"Benson approved, works great"
+4,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Does exactly what I needed them too
+5,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Build quality is good. And as Benson indicated, it works as expected.
+
+Very useful as I have a ton of legacy micro USB cables around."
+6,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,It's been a good adapter for me. No issues.
+7,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,"These work perfect with the micro USB chargers that I already have, the turbo charge doesn't always work but it's not a big deal. I use the adapter to charge over night because I don't need the turbo charge for that"
+8,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,Works. High quality feel.
+9,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Benson Leung approved: good enough for me.
+0,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Great Product, came and works as described."
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,They work exactly how I expected. Quality product.
+2,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"I didn't realize the Nexus 5X used USB Type-C when I upgraded from my Nexus 5 a couple months ago. All of my phone's chargers - in my car, the portable power brick in my backpack, the three dozen of them lying around my house - were basically useless. I couldn't even connect my new phone to my PC! This thing solved the problem though. I just leave these two attached to my car and portable power brick unless I need to remove them for anything else. Their small size makes them super portable - which is nice until you forget them in your jeans and they go through the wash and dry cycle - whoops. But hey, it still works! Not bad for a tiny little thing."
+3,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Awesome little adapters
+4,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,Affordable and good quality.
+5,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,Great little adapter. But it comes loose pretty easily from my phone.
+6,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Nicely made, although it is folded metal on the insert."
+7,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Fits great on my mico usb cables. Easier and cheaper than buying all new cables. Plus, since it's a 2 pack, you can carry one around in case you need to use someone's charger, etc."
+8,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,They work great. One is a little looser than I would like but no big deal. I had some long mircoUSB cables I didn't want to replace so these did the trick for my new phone.
+9,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,They work great
+0,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,Worked great! The only thing is missing is a lanyard to get 5 stars.
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,These work great. Just attach one end to the existing micro charger and the other to the device.
+2,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,works great with my Nexus 5x and my Nexus 6P. No complaints!
+3,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Works great on every cable I've tried it on and seems VERY durable. It's nice to find quality accessories like this!
+4,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Great for the price! Looks and feels good. Seems to connect on 'micro' side very well.
+5,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,The tiny adapters work great. Quality product for helping your micro-usb mate with your usb3.1
+6,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,It fits in the phone and it charges so that's all I can ask.thankyou
+7,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,Easy to lose them
+8,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Save money buy these adapters rather than new cords.
+9,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Works great with my old cord.
+0,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Feels solid.
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Doesn't work for OTG on the OnePlus Two, but it does work for other devices."
+2,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,works as expected
+3,Otium Wireless Bluetooth Headphones,3.0 out of 5 stars,"The ""sleeve"" that covers the actual adaptor came off upon removing it from the packaging. It still works, but makes the think the quality of the build is pretty low. Time will tell, at least they were inexpensive."
+4,Otium Wireless Bluetooth Headphones,2.0 out of 5 stars,"I bought these for use in the car far in our phones. Both my girlfriend and I have LG G5s. While the physical connection seems very solid, the phone regularly disconnects/reconnects from the charger unless the phone is held in just the right way. Which results in effectively no charge."
+5,Otium Wireless Bluetooth Headphones,3.0 out of 5 stars,"It works, but does not rapid charge Nexus 6p
+
+Pros:
+-price
+-makes use of micro usb charges (i have like 20)
+
+Cons:
+-does NOT rapid charge Nexus 6p (even using fast charge Samsung charger)
+-charges slowly"
+6,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"I was pleasantly surprised at how small and compact this adapter is. It will be easy to keep several on hand and stowed away in my laptop bag, car glove box and desk drawer so I'll always be able to charge my phone with any of the numerous micro-usb chargers that I own. I'm impressed with the quality of this adapter. The case is made of metal and it appears to be precisely manufactured and durable The micro-usb plug fits very snugly into this adapter so it won't fall out. I gave the adapter a quick test by plugging in a micro-usb cable in and using it to charge my Nexus 6p phone. My Nexus 6p charged just fine and the Current Monitor app showed the charge_type as a fast charge. I like that the adapter came in a 2-pack. Another huge pro for this adapter is that it is ""Benson"" tested and approved. I wouldn't purchase a USB-C adapter, charger or cable without that important qualification.
+
+I received this product at a discount for evaluation in exchange for an honest and unbiased review.
+
+I try to write helpful reviews so if you found the information in my review helpful please hit the ""Yes"" button beside the ""Was this review helpful to you?"" question below! Thank you!"
+7,Otium Wireless Bluetooth Headphones,1.0 out of 5 stars,I ordered the wrong item.
+8,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"I bought this because on my motorcycle I have a micro USB cable routed through the innards of my motorcycle, from the battery to my phone mount on the handle bars. Since getting my Nexus 6P I didn't feel like routing a new type C cable through the bike. I couldn't take a picture of it plugged into the phone because the phone is my only camera.
+
+This converter works well and charges my Nexus 6P well. I would advise this converter to my friends.
+
+The size of the converter is .75"" when it is plugged in.
+
+This product was provided at a discounted price in exchange for my honest review."
+9,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"I bought this because I have an Asus Zenpad S 8.0 tablet with USB-C port for charging. I have 3 different chargers for the devices but even then, it's is annoying to deal with as it is the only device I own with USB-C. Having to own a separate cable to charge this device can become a burden. I use a slingbag every day but for others, it's not something they do so carrying a charging cord for their devices might be difficult if you have more than one standard.
+
+This product comes in to help deal with the situation. I've tested on many micro usb cables and all have been able to charge my tablet just fine. I tested plugging in the micro usb cable to a PC and was able to access my files so data does work with this adapter. The fact that it comes with two is even better. These things are tiny and can be lost easily so I'd prefer to have a back up. Anyone with a USB-C device that still uses many other devices with micro USB should get one of these adapters. They'll save your life when in need of a charger.
+
+I received this product at a discount in exchange for my honest review."
+0,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,"What?: Otium USB C to Micro USB Adapter that allows you to use your existing Micro usb cable to connect your USB C devices with ease.
+
+Why?: I bought a new tablet and phone that both have USB C connectors and I have a ton of Micro USB cables that I use. I wanted to find something that would allow me to still use these cables with my new devices.
+
+Well?: I didn’t expect these adapters to be so small, I thought they would be bigger. Of Course, I am glad they are so small and they work perfectly. They are sleek and fit perfectly together with my micro usb cable and into my devices. I haven’t had any issues with these and I think they work very well.
+
+Updates will follow if any changes occur
+
+I did receive this product free or at a discounted rate for my honest review. All my reviews are my wholehearted opinion, regardless of discount or price paid for the item.
+
+If you have any questions about this product, I will help as best as I can"
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,I love these! Not much to say here - they do exactly what they're supposed to do! If you've ever had a need to convert a micro USB to a c-port then this is a great deal for you!
+2,Otium Wireless Bluetooth Headphones,3.0 out of 5 stars,It works really well but using it a lot tends to loosen up the USB-C end. Now one of them can not keep connection for long and is loose. I'm now using second one only when when I don't have my USB-C cable around.
+3,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"I've only used one of the two adapters, but it seems to function as expected with my LG G5. Pretty happy overall, certainly cheaper than buying all new USB C cables so I'm a happy camper."
+4,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,After carefully reviewing USD guidelines I exchanged all the cheaper adapters with these. No issues.
+5,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,I love this product. Works just like it is suppose it. Easy to carry since it so small. Great price.
+6,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Works perfect!
+7,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Works as intended, lets me make full use of my retractable micro USB cables as I carry them around often and need multiple tips as I keep around a portable power bank and the free LG G5 spare battery+cradle on me often."
+8,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Does exactly what it's supposed to, no surprises. All my existing micro-USB cables fit well into the adapter, and the adapter fits right into my new phone. No need to buy a whole bunch of new cables, just a few adapters!"
+9,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,These adapters have worked really well for me so far. I am able to fast charge my HTC 10 no problem.
+0,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,"Works as advertised, Benson approved, reasonably compact, not much else I could ask for."
+1,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,works with my cigarette lighter usb adapter
+2,Otium Wireless Bluetooth Headphones,4.0 out of 5 stars,"They are ok, a little better then the xiydai (spelling) ones I got. Still a bit slow. Maybe 50% charge over two hours."
+3,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,It looks better than I expected.
+4,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Perfect for my Nexus 6P
+5,Otium Wireless Bluetooth Headphones,5.0 out of 5 stars,Great product. Easy to carry. Great price
